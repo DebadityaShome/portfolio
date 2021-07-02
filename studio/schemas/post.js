@@ -9,8 +9,8 @@ export default {
       type: 'string',
     },
     {
-      name: 'slug',
-      title: 'Slug',
+      name: 'link',
+      title: 'Link',
       type: 'slug',
       options: {
         source: 'title',
@@ -30,12 +30,6 @@ export default {
       options: {
         hotspot: true,
       },
-    },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
     },
     {
       name: 'publishedAt',
